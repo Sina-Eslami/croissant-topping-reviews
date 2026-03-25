@@ -6,7 +6,7 @@ import streamlit as st
 
 from matplotlib.ticker import FormatStrFormatter
 
-df = pd.read_csv('anonymized_output.csv')
+df = pd.read_csv('data/anonymized_output.csv')
 df['dates'] = pd.to_datetime(df['dates'])
 
 st.set_page_config(layout="wide")
